@@ -1,18 +1,12 @@
 /* Fuentes para la pagina */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-/* para los contenedores */
-/* @use "@material/card";
-
-@include card.core-styles; */
-
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto";
 }
-
 
 
 /* --------------------------------------PAGINA PRINCIPAL index-------------------------------------- */
@@ -28,7 +22,7 @@ header {
 
 /* margen para lo escrito en el index */
 h2 {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .padreBannerFlex {
@@ -37,8 +31,9 @@ h2 {
     justify-content: flex-start;
     background-color: #39393a;
     margin: auto;
-    height: 150px;
+    height: 130px;
 }
+
 
 
 /* --------------------menu------------------------- */
@@ -48,8 +43,8 @@ h2 {
     color: #E6E6E6;
 }
 
- #menu nav {
-    margin-top: 20px;
+#menu nav {
+    margin: -98px;
 } 
 
 
@@ -57,54 +52,58 @@ h2 {
     background-color: #39393a;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
-  }
-  
-  .dropdown {
+    font-weight: bold;
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
     margin-top: 75px;
     padding-left: 10px;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #39393a;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: white ;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #b9ae0a;}
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {background-color: #4848e0;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #39393a;}
 
 
 /* logo de la empresa */
 .rash{
-    display: flex;
-    width: 150px;
-    height: 150px;
+    /* display: flex; */
+    /* width: 60px;*/
+    width: 60px;
+    /* height: 60px;  */
+    margin: 20px;
 }
 
 /* link redes sociales en el banner */
 .redesSociales img{
-    margin-top: 15px;
+    margin-top: 50px;
     margin-right: 15px;
     padding-left: 10px;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 
 /* -----------------------------------------termina baner----------------------------------------------------- */
@@ -118,10 +117,15 @@ h2 {
     height: 110px;
     width: 100%;
 } 
+
 .imagencentro {
     width: 35%;
 }
 
+.imagenesCentrales {
+    text-align: center;
+    background-color:#39393A;
+}
 
 /* Boton de whatssap */
 .botonWhatsApp img{
@@ -130,13 +134,6 @@ h2 {
     bottom: 10px;
     right: 10px;
 } 
-
-
-.imagenesCentrales {
-    text-align: center;
-    background-color:#39393A;
-}
-
 
 /* ------------------------------------- pie de pagina ----------------------------------- */
 #footer {
@@ -197,18 +194,17 @@ form {
 
 
 .marcoProducto {
-    border: 2px black solid;
-    border-radius: 4px;
-    /* display: flex; */
+    border: 1px rgb(160, 159, 159) solid;
+    border-radius: 15px;
     flex-direction: row;
     justify-content: center;
-    /* width:auto; */
     width: 250px;
     height: 430px;
-    /* height: 200px; */
-    box-shadow: 2px 2px 10px;
+    box-shadow: 2px 2px 10px rgb(70, 69, 69);
     margin: 30px;
     background-color: white;
+    /* padding: 10px;  */
+     /*no se como queda mejor */
 } 
 
 .marcoProducto img {
@@ -220,27 +216,86 @@ form {
 }
 
 .marcoProducto p{
-    font-weight:  bolder;
+    font-weight: bolder;
     margin: 15px;
+    text-align: center;
+}
+
+.marcoProducto hr {
+    height:3px;
+    border-width:0;
+    background-color:rgb(76, 0, 255);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.marcoProducto img{
+    object-fit: contain;
+}
+
+
+/* ---------------------------------------boton comprar----------------------------------------- */
+.botonComprar {
+/* background-color: #4CAF50;   */
+/* padding: 15px 32px; */
+/* display: inline-block;  estos ya estaban quitados*/
+    border: none;
+    color: black;
+    text-align:center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}  
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #297373;
+    font-weight: bold;
 }
 
 
 
-.botonComprar {
-    /* background-color: #4CAF50;   */
-     border: none;
-    color: black;
-    /* padding: 15px 32px; */
-    text-align:center;
-    text-decoration: none;
-    /* display: inline-block; */
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-  } 
-
-  .botonComprarColor {
+/* .botonComprarColor {
     background-color: rgb(216, 5, 5);
     color: black;
     border: 2px solid #ff0000; /* Green */
-  }
+
+
+
+/* ----------------------------las fotos que estan abajo en el index---------------------------- */
+.fotosPlacaAccesoriosMother {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    height: 430px;
+    margin: auto;
+    width: 100%; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content:flex-start; */
+    margin: auto;
+}
+
+.contenedorPlacaAccesorioMother {
+    text-align: center;
+    padding: 10px; 
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.contenedorPlacaAccesorioMother img {
+    margin: 10px;
+    /* width: 100%; */
+    justify-content: center;
+    text-align: center;
+}
